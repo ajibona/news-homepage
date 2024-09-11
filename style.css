@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /*---- Fonts Family ----*/
+  --ff-fonts-family: "Inter", sans-serif;
+
+  /*---- Fonts-Size ----*/
+  --fs-font-size: 0.9rem;
+
+  /*---- Fonts Weight ----*/
+  --fw-inter-regular-400: 400;
+  --fw-inter-bold-700: 700;
+  --fw-inter-extrabold-800: 800;
+
+  /*---- Primary Colors ----*/
+  --pc-soft-orange: #e9ab53;
+  --pc-soft-red: #f15e50;
+
+   /*---- Neutral Colors ----*/
+   --nc-Off-white: #fffdfa;
+   --nc-Grayish-blue: hsl(233, 8%, 79%);
+   --nc-Dark-grayish-blue: #5d5f79;
+   --nc-Very-dark-blue: #00001a;
+}
+
+
+body{
+  font-family: var(--ff-fonts-family);
+  font-size: var(--fs-font-size);
+}
+
+button{
+  font-family: var(--ff-fonts-family);
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ---- Mobile Header Navigation ----- */
+.nav_header{
+  max-width: calc(100% - 27px);
+  margin-inline: auto; 
+  margin-block: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-container{
+  position: fixed;
+  top: 0;
+  right: -500px;
+  background-color: var(--nc-Off-white);
+  min-width: 300px;
+  height: 100%;
+  padding: 1.8rem;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.activesidebar{
+  right: 0;
+}
+.activesclose{
+  right: -500px;
+}
+.sidebar-menu{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 70px;
+}
+
+.sidebar-nav nav ul{
+  display: grid;
+  row-gap: 1.2rem;
+}
+
+.sidebar-nav nav ul li a{
+  font-size: 1.1rem;
+  color: var(--nc-Very-dark-blue);
+  transition: color 0.25s ease-in;
+}
+
+.sidebar-nav nav ul li a:hover{
+  color: var(--pc-soft-red);
+}
+
+/* ---- Hero-section ----*/
+#main-container-section{
+  max-width: calc(100% - 27px);
+  margin-inline: auto;
+}
+
+.hero-banner-container .banner-hero-image{
+  width: 100%;
+  min-height: 300px;
+  background: url('../news-homepage-main/assets/images/image-web-3-mobile.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-details-info > h1{
+  font-size: 2.5rem;
+  font-weight: var(--fw-inter-extrabold-800);
+  margin-block: 20px;
+  max-width: 300px;
+  line-height: 1.0;
+}
+
+.desktop-paragrap-section > p{
+  font-size: 1rem;
+  color: var(--nc-Dark-grayish-blue);
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.desktop-paragrap-section button{
+  background-color: var(--pc-soft-red);
+  border: none;
+  padding: 15px 30px;
+  font-size: 0.9rem;
+  font-weight: var(--fw-inter-bold-700);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  transition: all 0.25s ease-in;
+}
+
+.desktop-paragrap-section button:hover{
+  color: var(--nc-Off-white);
+  background-color: var(--nc-Very-dark-blue);
+}
+/*---Second Hero banner---*/
+.second-hero-banner-container{
+  padding: 25px 20px;
+  background-color: var(--nc-Very-dark-blue);
+  margin-bottom: 50px;
+}
+
+.second-hero-banner-container h2{
+  font-size: 2.2rem;
+  color: var(--pc-soft-orange);
+  margin-bottom: 25px;
+}
+
+.second-hero-details{
+  border-bottom: 1px solid var(--nc-Dark-grayish-blue);
+}
+
+.hero-list-details{
+  display: grid;
+  row-gap: 1.7rem;
+}
+
+.second-hero-details h3{
+  color: var(--nc-Off-white);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  transition: color 0.25s ease-in-out;
+}
+
+.second-hero-details h3:hover{
+  color: var(--pc-soft-orange);
+}
+
+.second-hero-details .second-hero-details-info{
+  color: var(--nc-Grayish-blue);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.hero-none-details{
+  border-bottom: none;
+}
+
+.hero-none-details p{
+  color: var(--nc-Grayish-blue);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/*----Product Display Section-----*/
+.product-layout-section{
+  display: grid;
+  row-gap: 2rem;
+  margin-bottom: 80px;
+}
+
+.product-list{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.product-banner img{
+  max-width: 100px;
+  height: 100%;
+}
+
+.product-list h1{
+  color: var(--pc-soft-red);
+  font-size: 2rem;
+  font-weight: var(--fw-inter-extrabold-800);
+  margin-bottom: 8px;
+}
+
+.product-list h3{
+  font-size: 1.2rem;
+  color: var(--nc-Very-dark-blue);
+  margin-bottom: 8px;
+  transition: all 0.25s ease-in;
+}
+
+.product-list h3:hover{
+  color: var(--pc-soft-red);
+}
+
+.product-list p{
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--nc-Dark-grayish-blue);
+}
+
+.desktop-header-navigation{
+  display: none;
+}
+
+
+/* ----- Desktop Screen Layout Size ----- */
+@media (width > 60rem) {
+  body{
+    padding: 2.1rem 6rem
+  }
+
+  .hero-banner-container .banner-hero-image{
+    background: url('../news-homepage-main/assets/images/image-web-3-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .mobile_nav{
+    display: none;
+  }
+
+  .sidebar-container{
+    display: none;
+  }
+
+  .banner-desktop-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-desktop-layout{
+    margin-top: 20px;
+  }
+  .hero-banner-container{
+    display: grid;
+    grid-template-columns: 2.1fr 1fr;
+    gap: 1.3rem;
+    margin-bottom: 60px
+  }
+
+  .second-hero-banner-container{
+    margin-bottom: 0;
+  }
+
+  .desktop-header-navigation{
+    display: block;
+  }
+
+  .desktop-header-navigation nav ul{
+    display: flex;
+    gap: 2.1rem;
+  }
+
+  .desktop-header-navigation nav ul li{
+    font-size: .95rem;
+  }
+
+  .desktop-header-navigation nav ul li a{
+    color: var(--nc-Very-dark-blue);
+    cursor: pointer;
+    transition: color .25s ease-in;
+  }
+
+  .desktop-header-navigation nav ul li a:hover{
+    color: var(--pc-soft-red);
+  }
+  
+  .desktop-paragrap-section button{
+    margin-bottom: 0;
+  }
+
+  .desktop-paragrap-section > p{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .product-layout-section{
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .banner-details-info > h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+  }
+
+}
+
