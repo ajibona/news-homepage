@@ -109,7 +109,7 @@ a{
 .hero-banner-container .banner-hero-image{
   width: 100%;
   min-height: 300px;
-  background: url('../news-homepage-main/assets/images/image-web-3-mobile.jpg');
+  background: url('assets/images/image-web-3-mobile.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -208,11 +208,6 @@ a{
   gap: 1.5rem;
 }
 
-.product-banner img{
-  max-width: 100px;
-  height: 100%;
-}
-
 .product-list h1{
   color: var(--pc-soft-red);
   font-size: 2rem;
@@ -249,7 +244,7 @@ a{
   }
 
   .hero-banner-container .banner-hero-image{
-    background: url('../news-homepage-main/assets/images/image-web-3-desktop.jpg');
+    background: url('assets/images/image-web-3-desktop.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
