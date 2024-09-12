@@ -35,6 +35,7 @@
 body{
   font-family: var(--ff-fonts-family);
   font-size: var(--fs-font-size);
+  background-color: var(--nc-Off-white);
 }
 
 button{
@@ -67,11 +68,14 @@ a{
   min-width: 300px;
   height: 100%;
   padding: 1.8rem;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in;
   display: block;
 }
 
+.active{
+  display: none;
+  visibility: hidden;
+}
 .activesidebar{
   right: 0;
 }
@@ -93,7 +97,7 @@ a{
 .sidebar-nav nav ul li a{
   font-size: 1.1rem;
   color: var(--nc-Very-dark-blue);
-  transition: color 0.25s ease-in;
+  transition: color 0.1s ease-in;
 }
 
 .sidebar-nav nav ul li a:hover{
@@ -138,8 +142,9 @@ a{
   font-weight: var(--fw-inter-bold-700);
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-bottom: 60px;
-  transition: all 0.25s ease-in;
+  margin-bottom: 70px;
+  transition: all 0.2s ease-in;
+  color: var(--nc-Very-dark-blue);
 }
 
 .desktop-paragrap-section button:hover{
@@ -150,7 +155,7 @@ a{
 .second-hero-banner-container{
   padding: 25px 20px;
   background-color: var(--nc-Very-dark-blue);
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .second-hero-banner-container h2{
@@ -170,9 +175,9 @@ a{
 
 .second-hero-details h3{
   color: var(--nc-Off-white);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
-  transition: color 0.25s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 
 .second-hero-details h3:hover{
@@ -219,7 +224,7 @@ a{
   font-size: 1.2rem;
   color: var(--nc-Very-dark-blue);
   margin-bottom: 8px;
-  transition: all 0.25s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .product-list h3:hover{
@@ -232,10 +237,12 @@ a{
   color: var(--nc-Dark-grayish-blue);
 }
 
+.product-banner img{
+  object-fit: cover;
+}
 .desktop-header-navigation{
   display: none;
 }
-
 
 /* ----- Desktop Screen Layout Size ----- */
 @media (width > 60rem) {
@@ -319,5 +326,13 @@ a{
     margin-top: 0;
   }
 
+  .product-layout-section{
+    margin-bottom: 20px;
+  }
+
 }
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); transition: all 0.2s ease-in; }
+.attribution a:hover{ color: var(--pc-soft-red);} */
 
